@@ -107,21 +107,6 @@ a {
   background-size: cover;
 }
 
-.swiper-pagination-progressbar {
-  height: 6px !important;
-  background: #1d243b;
-  max-width: 1360px;
-  @include tablet {
-    max-width: 940px;
-  }
-  @include small-tablet {
-    max-width: 728px;
-  }
-  @include mobile {
-    max-width: 458px;
-  }
-}
-
 @include desktop {
   .container {
     padding: 0 60px;

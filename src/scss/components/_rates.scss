@@ -119,7 +119,7 @@
           position: relative;
           border-bottom: 1px dashed #353946;
           color: var(--white);
-          background-image: url('/img/offers.png');
+          background-image: url('img/offers.png');
           background-repeat: no-repeat;
           background-position: 24px 4px;
           @include mobile {
@@ -175,7 +175,7 @@
           border-radius: 4px;
           background: rgba(255, 255, 255, 0.2);
 
-          background-image: url('/img/select.png');
+          background-image: url('img/select.png');
           background-repeat: no-repeat;
           background-position: 100px center;
           background-size: 24px;

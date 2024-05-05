@@ -1,27 +1,30 @@
-Тестовое задание на позицию HTML Верстальщик
-Данный проект представляет собой выполненное тестовое задание на позицию HTML Верстальщик. Проект включает в себя использование сборщика Gulp для автоматизации задач, а также библиотеки AOS для анимации и Swiper для слайдера.
+Test Task for HTML Developer Position
 
-Технологии
-В проекте использованы следующие технологии и инструменты:
+This project is a completed test task for the HTML Developer position. The project includes the use of Gulp build system for automating tasks, as well as AOS library for animation and Swiper for sliders.
 
-Gulp: Сборщик для автоматизации различных задач, таких как компиляция Sass в CSS, сжатие изображений, минификация и конкатенация файлов и многое другое.
-AOS (Animate on Scroll): Библиотека для создания анимации элементов при прокрутке страницы.
-Swiper: Библиотека для создания красивых и адаптивных слайдеров.
-Установка и запуск проекта
-Клонируйте репозиторий на ваш локальный компьютер:
+Technologies
+The project utilizes the following technologies and tools:
+
+Gulp: A build system for automating various tasks such as compiling Sass to CSS, image compression, minification, concatenation of files, and more.
+AOS (Animate on Scroll): A library for creating animations on elements as they scroll into view.
+Swiper: A library for creating beautiful and responsive sliders.
+Installation and Running the Project
+Clone the repository to your local machine:
 bash
-Copy code
-git clone https://github.com/your-username/your-repository.git
-Установите зависимости, используя npm или yarn:
-Copy code
+
+git clone https://github.com/VladikOvcharenko/tt-trade_blade.git
+
+Install dependencies using npm or yarn:
+
 npm install
-или
-Copy code
+or
 yarn install
-Запустите проект, используя Gulp:
-Copy code
-gulp
-Этот скрипт запустит сборку проекта и запустит локальный сервер для разработки.
-Дополнительная информация
-Если вы хотите изменить настройки сборщика Gulp, отредактируйте файл gulpfile.js.
-Для настройки анимации с помощью AOS и слайдера с помощью Swiper, обратитесь к их документации для получения подробной информации.
+
+Run the project using Gulp:
+
+npm run dev
+
+This script will build the project and start a local development server.
+Additional Information
+If you want to adjust the settings of the Gulp build system, edit the gulpfile.js file.
+For configuring animations using AOS and sliders using Swiper, refer to their documentation for detailed information.

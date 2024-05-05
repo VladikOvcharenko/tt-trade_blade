@@ -8,7 +8,7 @@
     </div>
 
     <div class="rates-offers">
-      <div class="rates-offers-item">
+      <div class="rates-offers-item" data-aos="flip-left">
         <div class="rates-offers-item__top">
           <h3 class="rates-offers-item__title">STANDART</h3>
           <ul class="rates-offers-item__list list-reset">
@@ -28,7 +28,11 @@
           <div class="rates-offers-item__box flex">
             <span class="rates-offers-item__box-price">$234</span>
             <span class="rates-offers-item__box-percent">-35%</span>
-            <div class="rates-offers-item__box-select">12 месяцев</div>
+            <select name="term" class="rates-offers-item__box-select">
+              <option value="12">12 месяцев</option>
+              <option value="6">6 месяцев</option>
+              <option value="3">3 месяца</option>
+            </select>
           </div>
           <button class="rates-offers-item__btn btn-reset flex">
             ПОПРОБОВАТЬ
@@ -36,7 +40,7 @@
           </button>
         </div>
       </div>
-      <div class="rates-offers-item">
+      <div class="rates-offers-item" data-aos="flip-left">
         <div class="rates-offers-item__top">
           <h3 class="rates-offers-item__title">VIP</h3>
           <ul class="rates-offers-item__list list-reset">
