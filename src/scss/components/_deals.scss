@@ -26,7 +26,7 @@
     line-height: 143%;
     letter-spacing: -0.04em;
     color: #35ff9e;
-    background-image: url('img/dot.png');
+    background-image: url('../img/dot.png');
     background-repeat: no-repeat;
     background-size: 7px;
     background-position: left center;
@@ -62,7 +62,7 @@
       flex-direction: column;
       justify-content: space-between;
 
-      background-image: url('img/slide-bg.png');
+      background-image: url('../img/slide-bg.png');
       background-repeat: no-repeat;
       background-size: cover;
       overflow: hidden;
@@ -73,7 +73,7 @@
         right: -50px;
         width: 163px;
         height: 160px;
-        background-image: url('img/slide-star.png');
+        background-image: url('../img/slide-star.png');
       }
       &__currency {
         h3 {
@@ -134,7 +134,7 @@
           height: 17px;
           top: 10px;
           right: -16px;
-          background-image: url('/img/profit-arrow.png');
+          background-image: url('../img/profit-arrow.png');
           background-size: contain;
           background-repeat: no-repeat;
         }
