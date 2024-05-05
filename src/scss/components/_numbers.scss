@@ -1,0 +1,102 @@
+.numbers {
+  position: relative;
+  background: var(--white);
+  &-container {
+    padding-top: 65px;
+    padding-bottom: 61px;
+    display: flex;
+    gap: 156px;
+    background-color: var(--white);
+
+    @include tablet {
+      gap: 110px;
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 70px;
+    }
+
+    @include mobile {
+      padding-top: 24px;
+      padding-bottom: 48px;
+      gap: 40px;
+    }
+  }
+  &-title {
+    h2 {
+      color: var(--dark);
+    }
+    span {
+      margin-top: 4px;
+      font-size: 14px;
+      line-height: 143%;
+      letter-spacing: -0.04em;
+      color: #000;
+      opacity: 0.5;
+    }
+  }
+
+  &-wrapper {
+    width: 100%;
+    margin-right: 95px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+
+    @include tablet {
+      margin: 0;
+      gap: 40px;
+    }
+
+    @include small-tablet {
+      gap: 18px;
+    }
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+    &-item {
+      flex-direction: column;
+      align-items: start;
+
+      @include mobile {
+        max-width: 150px;
+        &:first-child {
+          span {
+            max-width: 110px;
+          }
+        }
+      }
+
+      &__title {
+        font-size: 14px;
+        line-height: 143%;
+        text-transform: uppercase;
+        color: var(--dark);
+        opacity: 0.8;
+        flex-grow: 1;
+      }
+      &__indicators,
+      &__indicators-percent {
+        margin: 0;
+        margin-top: 8px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: var(--purple);
+
+        @include tablet {
+          font-size: 40px;
+        }
+
+        @include small-tablet {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}

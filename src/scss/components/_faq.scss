@@ -1,0 +1,92 @@
+.faq {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background: var(--white);
+  &-container {
+    max-width: 1006px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include small-tablet {
+      padding-top: 56px;
+      padding-bottom: 54px;
+    }
+  }
+  &-title {
+    color: var(--dark);
+  }
+  &-list {
+    margin-top: 64px;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+
+    @include small-tablet {
+      margin-top: 40px;
+    }
+    &__item {
+      position: relative;
+      max-height: 64px;
+      padding: 16px;
+      border-radius: 4px;
+      background: #eaeff0;
+      transition: all 0.3s ease-in-out;
+
+      @include mobile {
+        max-height: 88px;
+      }
+      &.active {
+        max-height: 400px;
+        background: var(--purple);
+        h3 {
+          color: var(--white);
+        }
+        p {
+          visibility: visible;
+          opacity: 0.8;
+        }
+        svg {
+          color: var(--white);
+          transform: rotate(180deg);
+        }
+      }
+      &-title {
+        margin: 0;
+        padding-right: 56px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: -0.04em;
+        color: #030718;
+        transition: color 0.3s ease-in-out;
+
+        @include small-tablet {
+          font-size: 20px;
+        }
+      }
+      &-text {
+        visibility: hidden;
+        opacity: 0;
+        margin-top: 12px;
+        color: var(--white);
+        transition: all 0.3s ease-in-out;
+      }
+      &-btn {
+        position: absolute;
+        top: 20px;
+        right: 16px;
+        width: 24px;
+        height: 24px;
+        transition: all 0.3s ease-in-out;
+        @include mobile {
+          top: 32px;
+        }
+      }
+    }
+  }
+}

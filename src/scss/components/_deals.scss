@@ -1,0 +1,173 @@
+.deals {
+  &-container {
+    margin: 0 auto;
+    padding: 96px 0 158px 80px;
+    max-width: 1440px;
+    overflow: hidden;
+
+    @include small-tablet {
+      padding: 48px 0 77px 40px;
+    }
+    @include mobile {
+      margin: 48px auto px;
+      padding-left: 16px;
+    }
+  }
+  &-title {
+    color: var(--white);
+  }
+  &-online {
+    margin: 0;
+    margin-top: 4px;
+    padding-left: 11px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: -0.04em;
+    color: #35ff9e;
+    background-image: url('/img/dot.png');
+    background-repeat: no-repeat;
+    background-size: 7px;
+    background-position: left center;
+  }
+  &-slider {
+    margin-top: 72px;
+    padding-bottom: 30px;
+    width: 1570px;
+    @include tablet {
+      width: 1140px;
+    }
+    @include small-tablet {
+      width: 940px;
+    }
+    @include mobile {
+      margin-top: 24px;
+      width: 630px;
+    }
+
+    &-scrollbar {
+      margin: 0 auto !important;
+      height: 6px;
+      bottom: -20px !important;
+      max-width: 955px;
+    }
+
+    &-item {
+      position: relative;
+      max-width: 299px;
+      height: 208px;
+      padding: 16px 16px 13px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      background-image: url('/img/slide-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        right: -50px;
+        width: 163px;
+        height: 160px;
+        background-image: url('/img/slide-star.png');
+      }
+      &__currency {
+        h3 {
+          margin: 0;
+          font-family: var(--font-family);
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 140%;
+          letter-spacing: -0.04em;
+          text-transform: uppercase;
+          color: var(--white);
+        }
+        span {
+          margin: 0;
+          font-family: var(--font-family);
+          font-size: 14px;
+          line-height: 129%;
+          letter-spacing: -0.02em;
+          text-align: right;
+          color: var(--white);
+          opacity: 0.4;
+        }
+        &-time {
+          font-weight: 400;
+        }
+        &-spot {
+          font-weight: 500;
+        }
+      }
+      &__box {
+        p {
+          margin: 0;
+          font-family: var(--font-family);
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 129%;
+          letter-spacing: -0.02em;
+          text-transform: uppercase;
+          color: var(--white);
+          opacity: 0.7;
+        }
+      }
+      &__index {
+        position: relative;
+        margin: 0;
+        margin-top: 2px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 129%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #35ff9e;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 17px;
+          top: 10px;
+          right: -16px;
+          background-image: url('/img/profit-arrow.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+      &__target {
+        margin-top: 9px;
+        justify-content: space-between;
+        &-title {
+          font-family: var(--font-family);
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 129%;
+          letter-spacing: -0.02em;
+          color: var(--white);
+          opacity: 0.7;
+        }
+        &-date {
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 129%;
+          letter-spacing: -0.02em;
+          text-align: right;
+          color: var(--white);
+          opacity: 0.4;
+        }
+      }
+    }
+
+    &-pagination {
+      top: auto !important;
+      bottom: 0px;
+      height: 16px;
+    }
+  }
+}

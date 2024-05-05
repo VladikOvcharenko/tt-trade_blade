@@ -1,0 +1,213 @@
+.rates {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  &-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include small-tablet {
+      padding-top: 248px;
+    }
+
+    @include mobile {
+      padding-top: 208px;
+      padding-bottom: 44px;
+    }
+  }
+  &-title {
+    color: var(--white);
+  }
+  &-choose {
+    margin-top: 52px;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 4px;
+    max-width: 413px;
+    height: 52px;
+    background: rgba(107, 84, 255, 0.4);
+
+    @include mobile {
+      margin-top: 28px;
+    }
+
+    &__btn {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 117%;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      color: var(--q);
+      opacity: 0.8;
+
+      @include mobile {
+        font-size: 18px;
+        line-height: 133%;
+      }
+      &.active {
+        border-radius: 4px;
+        background: var(--q);
+        font-weight: 700;
+        color: var(--dark);
+        opacity: 1;
+      }
+    }
+  }
+  &-offers {
+    margin-top: 44px;
+    gap: 20px;
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      margin-top: 24px;
+    }
+
+    &-item {
+      padding: 24px 0;
+      max-width: 414px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid var(--purple);
+      border-radius: 8px;
+      transition: background 0.3s ease-in-out;
+
+      @include mobile {
+        padding: 16px 0;
+      }
+
+      &:hover {
+        background: var(--purple);
+      }
+      &__title {
+        margin: 0;
+        padding: 0 24px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 150%;
+        letter-spacing: -0.04em;
+        color: var(--white);
+
+        @include mobile {
+          padding: 0 16px;
+        }
+      }
+      &__list {
+        margin-top: 56px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+
+        @include mobile {
+          margin-top: 24px;
+        }
+        &-item {
+          padding: 0 24px 8px 46px;
+          width: 100%;
+
+          position: relative;
+          border-bottom: 1px dashed #353946;
+          color: var(--white);
+          background-image: url('/img/offers.png');
+          background-repeat: no-repeat;
+          background-position: 24px 4px;
+          @include mobile {
+            padding: 0 16px 8px 36px;
+            background-position: 16px 4px;
+          }
+        }
+      }
+
+      &__bottom {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__box {
+        margin-top: 40px;
+        padding: 0 24px;
+        position: relative;
+        justify-content: space-between;
+        @include mobile {
+          padding: 0 16px;
+        }
+        &-price {
+          font-family: var(--font-family);
+          font-weight: 500;
+          font-size: 35px;
+          line-height: 114%;
+          letter-spacing: -0.04em;
+          color: var(--white);
+        }
+        &-percent {
+          position: absolute;
+          top: 0;
+          left: 108px;
+          font-family: var(--font-family);
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 111%;
+          letter-spacing: -0.04em;
+          text-transform: uppercase;
+          color: #35ff9e;
+        }
+        &-select {
+          border: none;
+          appearance: none;
+          padding: 6px 30px 6px 8px;
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 125%;
+          text-align: right;
+          color: var(--white);
+          border-radius: 4px;
+          background: rgba(255, 255, 255, 0.2);
+
+          background-image: url('/img/select.png');
+          background-repeat: no-repeat;
+          background-position: 100px center;
+          background-size: 24px;
+        }
+      }
+      &__btn {
+        margin: 20px 24px 0 24px;
+        padding: 8px 24px;
+        flex-direction: column;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        color: #030718;
+        border-radius: 3px;
+        box-shadow: 0 0 4px 0 var(--q);
+        background: var(--q);
+
+        @include mobile {
+          margin: 20px 16px 0 16px;
+        }
+
+        span {
+          margin: 0;
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 133%;
+          color: #030718;
+          opacity: 0.56;
+        }
+      }
+    }
+  }
+}

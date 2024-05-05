@@ -1,0 +1,5 @@
+import './components/slider.js'
+import './components/accordion.js'
+import './components/burger.js'
+import './components/aos.js'
+import './components/counter.js'

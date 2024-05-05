@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+  font-family: var(--font-family);
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  background-color: #030718;
+}
+
+.page__body {
+  margin: 0;
+  min-width: 360px;
+  min-height: 100%;
+  font-size: 16px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 80px;
+  max-width: 1440px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 1.212rem + 2.05vw, 2.75rem);
+  line-height: 127%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+.text {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.decoration {
+  position: absolute;
+  content: '';
+  height: 60px;
+  width: 45%;
+  top: -59px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-image: url('/img/decoration.png');
+  background-size: cover;
+}
+
+.swiper-pagination-progressbar {
+  height: 6px !important;
+  background: #1d243b;
+  max-width: 1360px;
+  @include tablet {
+    max-width: 940px;
+  }
+  @include small-tablet {
+    max-width: 728px;
+  }
+  @include mobile {
+    max-width: 458px;
+  }
+}
+
+@include desktop {
+  .container {
+    padding: 0 60px;
+  }
+}
+@include tablet {
+  .container {
+    padding: 0 40px;
+  }
+}
+@include small-tablet {
+  .container {
+    padding: 0 32px;
+  }
+  .decoration {
+    top: -24px;
+    background-size: contain;
+  }
+}
+@include mobile {
+  .container {
+    padding: 0 16px;
+  }
+}

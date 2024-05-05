@@ -1,0 +1,109 @@
+.header {
+  &-container {
+    position: relative;
+    justify-content: space-between;
+  }
+  &-logo {
+    width: 132px;
+    height: 64px;
+  }
+  &-wrapper {
+    width: 100%;
+    max-width: 1020px;
+    justify-content: space-between;
+
+    @include tablet {
+      width: 0%;
+      position: absolute;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      top: 0;
+      right: 0;
+      height: 100vh;
+
+      padding: 32px;
+      flex-direction: column;
+      background: var(--purple);
+      align-items: flex-start;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &.menu--active {
+      width: 50%;
+      visibility: visible;
+      display: flex;
+      height: 100vh;
+
+      z-index: 8;
+      border: 0.1rem solid rgba(0, 0, 0, 0.2);
+      box-shadow: 8px -8px 10px rgba(0, 0, 0, 0.1);
+      opacity: 1;
+      @include small-tablet {
+        width: 100%;
+      }
+    }
+  }
+  &-nav {
+    &__list {
+      gap: 32px;
+      @include tablet {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+      }
+    }
+    &__link {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 121%;
+      text-transform: uppercase;
+      color: var(--white);
+      @include tablet {
+        font-size: 24px;
+      }
+    }
+  }
+  &-user {
+    gap: 12px;
+    @include tablet {
+      flex-direction: row-reverse;
+    }
+    &-enter {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 143%;
+      text-transform: uppercase;
+      color: var(--q);
+      padding: 11px 24px;
+      border: 1.5px solid var(--q);
+      border-radius: 3px;
+      box-shadow: 0 0 4px 0 var(--q);
+      background: rgba(87, 225, 255, 0.2);
+    }
+    &-registration {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 143%;
+      text-transform: uppercase;
+      color: #030718;
+      border: 1px solid var(--q);
+      border-radius: 3px;
+      padding: 11px 24px;
+      box-shadow: 0 0 4px 0 var(--q);
+      background: var(--q);
+    }
+  }
+  .burger {
+    display: none;
+    @include tablet {
+      @include burger;
+      z-index: 9;
+      display: block;
+      color: var(--white);
+    }
+  }
+}
