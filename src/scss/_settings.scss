@@ -101,10 +101,10 @@ a {
   height: 60px;
   width: 45%;
   top: -59px;
-  left: 0;
-  background-repeat: no-repeat;
-  background-image: url('../img/decoration.png');
-  background-size: cover;
+  left: -50px;
+  transform: skew(45deg);
+  border-radius: 0 6px 0 0;
+  background: var(--white);
 }
 
 @include desktop {
@@ -122,8 +122,9 @@ a {
     padding: 0 32px;
   }
   .decoration {
+    width: 77%;
     top: -24px;
-    background-size: contain;
+    transform: skew(25deg);
   }
 }
 @include mobile {
