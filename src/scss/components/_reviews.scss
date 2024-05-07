@@ -1,0 +1,91 @@
+.reviews {
+  padding: 96px 0;
+  overflow: hidden;
+
+  @include small-tablet {
+    padding: 56px 0;
+  }
+  @include mobile {
+    padding: 56px 0 64px;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+  }
+  &-title {
+    color: var(--white);
+  }
+  &-wrapper {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    @include mobile {
+      margin-top: 40px;
+    }
+
+    @include small-tablet {
+      grid-template-columns: 1fr;
+    }
+    &__item {
+      padding: 24px 16px;
+      display: flex;
+      gap: 12px;
+      border-radius: 4px;
+      background: rgba(234, 239, 240, 0.2);
+      &-img {
+        width: 81px;
+        height: 105px;
+      }
+      &-box {
+        display: flex;
+        flex-direction: column;
+      }
+      &-name {
+        margin: 0;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: -0.04em;
+        color: var(--white);
+      }
+      &-profit {
+        margin: 0;
+        margin-top: 2px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.02em;
+        color: #a5aebc;
+      }
+      &-text {
+        margin-top: 12px;
+        color: var(--white);
+        opacity: 0.8;
+      }
+    }
+  }
+  &-btn {
+    margin: 0 auto;
+
+    margin-top: 72px;
+    padding: 16px 24px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    border: 2px solid var(--q);
+    border-radius: 3px;
+    padding: 16px 24px;
+    color: var(--q);
+
+    @include mobile {
+      margin-top: 24px;
+    }
+  }
+}

@@ -10,11 +10,10 @@
     justify-content: center;
 
     @include small-tablet {
-      padding-top: 248px;
+      padding-top: 44px;
     }
 
     @include mobile {
-      padding-top: 208px;
       padding-bottom: 44px;
     }
   }

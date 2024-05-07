@@ -1,0 +1,84 @@
+.begin {
+  position: relative;
+  background: var(--purple);
+  padding: 56px 0 96px;
+
+  @include mobile {
+    padding: 24px 0 46px;
+  }
+  &-decoration {
+    background: var(--purple);
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+  }
+  &-title {
+    color: var(--white);
+  }
+  &-list {
+    margin-top: 79px;
+    margin-bottom: 39px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 70px 40px;
+    }
+    @include mobile {
+      gap: 32px;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      margin-top: 51px;
+      margin-bottom: 40px;
+    }
+    &__item {
+      padding-top: 39px;
+      border-top: 2px solid var(--white);
+
+      @include mobile {
+        padding: 0;
+        padding-left: 30px;
+        border: none;
+        border-left: 2px solid var(--white);
+      }
+      &-title {
+        font-size: 28px;
+        color: var(--white);
+
+        @include mobile {
+          margin: 0;
+          font-size: 20px;
+        }
+      }
+      &-text {
+        margin-top: 8px;
+        color: var(--white);
+      }
+    }
+  }
+  &-btn {
+    margin: 0 auto;
+    margin-top: 56px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #030718;
+    border-radius: 3px;
+    padding: 16px 24px;
+    box-shadow: 0 0 4px 0 var(--q);
+    background: var(--q);
+
+    @include mobile {
+      margin: 0;
+      margin-top: 40px;
+    }
+  }
+}
